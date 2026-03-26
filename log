@@ -45,3 +45,18 @@ list.c:35:25: error: expected expression before ‘)’ token
    35 |     List* lista = (list*)malloc(sizeof(list*));
       |                         ^
 4706fe8
+Thu Mar 26 07:13:34 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:35:40: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   35 |     List* lista = (List*)malloc(sizeof(list*));
+      |                                        ^~~~
+      |                                        List
+list.c:35:40: note: each undeclared identifier is reported only once for each function it appears in
+list.c:35:45: error: expected expression before ‘)’ token
+   35 |     List* lista = (List*)malloc(sizeof(list*));
+      |                                             ^
+a1ec7a6
