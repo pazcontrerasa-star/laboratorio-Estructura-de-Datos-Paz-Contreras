@@ -184,3 +184,17 @@ Thu Mar 26 07:35:10 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 47cf845
+Thu Mar 26 07:42:39 PM UTC 2026: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:65:34: error: ‘Node’ has no member named ‘tail’
+   65 |     list->current = list->current->tail;
+      |                                  ^~
+list.c: In function ‘prevList’:
+list.c:70:31: error: expected expression before ‘||’ token
+   70 |     if(list->current == NULL) || (list->current->prev == NULL) return NULL;
+      |                               ^~
+60cee05
