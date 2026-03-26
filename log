@@ -116,3 +116,27 @@ list.c:35:27: note: object of size 8 allocated by ‘malloc’
       |                           ^~~~~~~~~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
 6c9faa4
+Thu Mar 26 07:16:44 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:36:10: error: array subscript ‘List {aka struct List}[0]’ is partly outside array bounds of ‘unsigned char[8]’ [-Werror=array-bounds=]
+   36 |     lista->head = NULL;
+      |          ^~
+list.c:35:28: note: object of size 8 allocated by ‘malloc’
+   35 |     List* lista = (List *) malloc(sizeof(List*));
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+list.c:37:10: error: array subscript ‘List {aka struct List}[0]’ is partly outside array bounds of ‘unsigned char[8]’ [-Werror=array-bounds=]
+   37 |     lista->tail = NULL;
+      |          ^~
+list.c:35:28: note: object of size 8 allocated by ‘malloc’
+   35 |     List* lista = (List *) malloc(sizeof(List*));
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+list.c:38:10: error: array subscript ‘List {aka struct List}[0]’ is partly outside array bounds of ‘unsigned char[8]’ [-Werror=array-bounds=]
+   38 |     lista->current = NULL;
+      |          ^~
+list.c:35:28: note: object of size 8 allocated by ‘malloc’
+   35 |     List* lista = (List *) malloc(sizeof(List*));
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+f25e334
