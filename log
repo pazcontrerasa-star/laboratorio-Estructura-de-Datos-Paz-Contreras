@@ -60,3 +60,9 @@ list.c:35:45: error: expected expression before ‘)’ token
    35 |     List* lista = (List*)malloc(sizeof(list*));
       |                                             ^
 a1ec7a6
+Thu Mar 26 07:13:56 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/60
+fd7b5d8
