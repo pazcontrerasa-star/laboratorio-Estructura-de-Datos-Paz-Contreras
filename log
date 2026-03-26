@@ -30,3 +30,18 @@ list.c:38:10: error: request for member ‘current’ in something not a structu
    38 |     lista->current = NULL;
       |          ^~
 4126847
+Thu Mar 26 07:13:10 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:35:20: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   35 |     List* lista = (list*)malloc(sizeof(list*));
+      |                    ^~~~
+      |                    List
+list.c:35:20: note: each undeclared identifier is reported only once for each function it appears in
+list.c:35:25: error: expected expression before ‘)’ token
+   35 |     List* lista = (list*)malloc(sizeof(list*));
+      |                         ^
+4706fe8
