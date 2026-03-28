@@ -274,3 +274,32 @@ Sat Mar 28 08:19:09 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 4831626
+Sat Mar 28 08:38:36 PM UTC 2026: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:106:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+  106 |     Nodo * nuevoNodo = createNode(data);
+      |     ^~~~
+      |     Node
+list.c:106:24: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+  106 |     Nodo * nuevoNodo = createNode(data);
+      |                        ^~~~~~~~~~
+list.c:107:25: error: assignment to ‘Node *’ from incompatible pointer type ‘int *’ [-Wincompatible-pointer-types]
+  107 |     list->current->next = nuevoNodo;
+      |                         ^
+list.c:108:14: error: request for member ‘prev’ in something not a structure or union
+  108 |     nuevoNodo->prev = list->current;
+      |              ^~
+list.c:109:14: error: request for member ‘next’ in something not a structure or union
+  109 |     nuevoNodo->next = list->current->next;
+      |              ^~
+list.c:110:14: error: request for member ‘next’ in something not a structure or union
+  110 |     nuevoNodo->next->prev = nuevoNodo;
+      |              ^~
+list.c:111:14: error: request for member ‘prev’ in something not a structure or union
+  111 |     nuevoNodo->prev->next = nuevoNodo;
+      |              ^~
+11564ca
