@@ -89,6 +89,7 @@ void pushFront(List * list, void * data) {
 }
 
 void pushBack(List * list, void * data) {
+    assert(list!=NULL);
     Node * nuevoNodo = createNode(data);
     if(list->head ==NULL){
         list->head = nuevoNodo;
