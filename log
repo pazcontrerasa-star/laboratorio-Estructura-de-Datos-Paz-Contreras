@@ -325,3 +325,20 @@ Sat Mar 28 09:17:06 PM UTC 2026:
  tests:  10|2
 total_score: 40/60
 f35f8ff
+Sat Mar 28 09:30:44 PM UTC 2026: 
+ list.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:108:37: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+  108 |     if(list->current ==NULL) return NULL;
+      |                                     ^~~~
+list.c:106:6: note: declared here
+  106 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+list.c:115:11: error: ‘List’ {aka ‘struct List’} has no member named ‘curent’; did you mean ‘current’?
+  115 |     list->curent->next->prev = nuevoNodo;
+      |           ^~~~~~
+      |           current
+40bcbbf
