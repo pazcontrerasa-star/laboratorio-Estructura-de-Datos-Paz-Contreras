@@ -105,14 +105,13 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
     assert(list!=NULL);
-    if(list->current ==NULL) return NULL;
     
     Node * nuevoNodo = createNode(data);
     
     
     nuevoNodo->prev = list->current;
     nuevoNodo->next = list->current->next;
-    list->curent->next->prev = nuevoNodo;
+    list->current->next->prev = nuevoNodo;
     list->current->next = nuevoNodo;
     list->tail = nuevoNodo;
 }
