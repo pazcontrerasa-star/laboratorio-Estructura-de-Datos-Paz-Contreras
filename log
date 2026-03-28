@@ -380,3 +380,9 @@ list.c:138:8: error: ‘izquiera’ undeclared (first use in this function); did
       |        izquierda
 list.c:138:8: note: each undeclared identifier is reported only once for each function it appears in
 b1abe85
+Sat Mar 28 10:21:59 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 60/60
+21c835f
