@@ -303,3 +303,9 @@ list.c:111:14: error: request for member ‘prev’ in something not a structure
   111 |     nuevoNodo->prev->next = nuevoNodo;
       |              ^~
 11564ca
+Sat Mar 28 08:45:59 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 40/60
+4cb7474
