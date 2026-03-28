@@ -246,3 +246,9 @@ list.c:83:13: error: ‘List’ {aka ‘struct List’} has no member named ‘n
    83 |         list->next = list->head;
       |             ^~
 6790a35
+Sat Mar 28 05:05:48 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 30/60
+cc312a1
