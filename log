@@ -236,3 +236,13 @@ Sat Mar 28 04:08:23 PM UTC 2026:
  tests:  9|3
 total_score: 30/60
 762e327
+Sat Mar 28 05:05:12 PM UTC 2026: 
+ list.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:83:13: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   83 |         list->next = list->head;
+      |             ^~
+6790a35
