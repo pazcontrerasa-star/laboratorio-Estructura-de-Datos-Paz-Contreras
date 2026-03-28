@@ -368,3 +368,15 @@ Sat Mar 28 10:13:49 PM UTC 2026:
  1 file changed, 8 insertions(+), 1 deletion(-)
  tests:  0|0
 6212001
+Sat Mar 28 10:21:41 PM UTC 2026: 
+ list.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:138:8: error: ‘izquiera’ undeclared (first use in this function); did you mean ‘izquierda’?
+  138 |     if(izquiera !=NULL){
+      |        ^~~~~~~~
+      |        izquierda
+list.c:138:8: note: each undeclared identifier is reported only once for each function it appears in
+b1abe85
